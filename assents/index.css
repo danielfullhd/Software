@@ -1,0 +1,37 @@
+html{
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+    margin: 0%;
+    padding: 0%;
+}
+.center{
+    text-align: center;
+}
+
+body figure{
+    background-color: salmon;
+    width: 20rem;
+    height: 19rem;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    transition:background-color 2s ease, transform 2s ease;
+}
+figure:hover{
+    transform:translate(80px);
+    transition: all 2s ease;
+    background-color: aqua;
+}
+.imagen{
+    width: 300px;
+    height: 100px;
+    object-fit: scale-down;
+    transition: transform 2s ease;    
+}
+.imagen:hover{
+    transform: scale(2)
+}
+
+     
